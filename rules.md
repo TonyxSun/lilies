@@ -6,6 +6,7 @@ Last changed: 2026-10-22.
 - No order is placed without Wuyue's explicit OK. No autonomous trading limit has been granted. (2026-10-22)
 - Every number needs a source and a date. Never invent data. (2026-10-22)
 - Paper trading first, through 2026-11-05, on a $1,000 paper account. After that, live with about $1,000. (2026-10-22)
+- The goal is to beat SPY and QQQ after costs. A retro runs every Friday after the close, comparing our return with both indexes for the week and since the start, explaining which trades helped or hurt, and proposing rule changes for Wuyue to approve. If we're still behind when paper trading ends on 2026-11-05, the recommendation is to change the strategy or hold the index. (2026-10-22)
 - Before any submit or confirm step, send Wuyue a screenshot and wait for his OK. (standing rule)
 
 ## Account
