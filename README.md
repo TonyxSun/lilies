@@ -1,4 +1,4 @@
-# lilies
+# lilies of the field
 
 Audit trail for Wuyue's investing system: what it decided each day, and why.
 
@@ -19,4 +19,4 @@ sources/             raw source notes, kept for reference only (day files quote 
 - Every number carries a source and a date. If something wasn't available, the file says so instead of guessing.
 - One commit per trading day, after that day's steps finish: `day: YYYY-MM-DD`.
 - No secrets, tokens, passwords or account numbers are ever committed.
-- Live working notes also live on the shared Notion page "Jane Street 投资决策（共享）". This repo is the permanent record.
+- Live working notes also live on the shared Notion page "lilies of the field 投资决策（共享）". This repo is the permanent record.
