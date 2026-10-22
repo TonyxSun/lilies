@@ -1,20 +1,22 @@
-# lilies — Jane Street investing group audit log
+# lilies
 
-Private audit trail for Wuyue's investing group: **Trader** (positions, orders, strategy) and **牛马** (research).
-Shared working doc: [Jane Street 投资决策（共享）](https://app.notion.com/p/401c4091fdc381deae99d96515e376d8) (Notion).
+Audit trail for Wuyue's investing system: what it decided each day, and why.
+
+## How to read it
+Start at `days/`. Each file is one trading day and stands on its own. It covers what the system saw, what it decided, the reasoning, and the sources, all in that one file. You never need another file to follow a day's decision.
 
 ## Layout
 ```
-niuma/                 牛马 (research bot)
-  profile/             name, description, standing rules
-  skills/              user-created skills available to this bot (snapshot)
-  memory/              memory export relevant to this group + Wuyue's standing rules
-  research/            source notes (posts, comments, X threads)
-  logs/YYYY-MM-DD.md   daily event log
-trader/                Trader's folder (same layout), committed from Trader's daily log lines
+days/YYYY-MM-DD.md   one file per day: state, decisions, rationale, sources, open questions
+rules.md             Wuyue's rules and the mechanical risk limits currently in force
+strategy.md          the current strategy, with a dated changelog of every change and why
+system/              how the system runs: daily schedule (routine prompts) and memory snapshot
+sources/             raw source notes, kept for reference only (day files quote what they use)
 ```
 
-## Commit policy
-- One commit per trading day after the day's steps finish: `log: YYYY-MM-DD`.
+## Conventions
+- All times are US Eastern.
+- Every number carries a source and a date. If something wasn't available, the file says so instead of guessing.
+- One commit per trading day, after that day's steps finish: `day: YYYY-MM-DD`.
 - No secrets, tokens, passwords or account numbers are ever committed.
-- Platform built-in system prompts are not included; bot profiles, rules, skills and memory are.
+- Live working notes also live on the shared Notion page "Jane Street 投资决策（共享）". This repo is the permanent record.

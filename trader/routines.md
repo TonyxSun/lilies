@@ -1,3 +1,0 @@
-# Routines (2026-10-22)
-- Paper trading: evening candidates — weekdays ~6:30pm ET (±15 min). Reads the Notion page and 牛马's research, proposes 0-5 sourced candidates with confidence and size on a $1,000 paper account, writes them to Notion, posts a summary to the group. No real orders. Ends after 2026-11-05 with a review vs SPY/QQQ and a go-live question.
-- Paper trading: morning re-verify — weekdays ~9:45am ET (±15 min). Re-checks candidates against fresh Robinhood prices and news, applies the risk rules, logs PAPER fills to Notion, posts a summary to the group. No real orders. Ends after 2026-11-05.
