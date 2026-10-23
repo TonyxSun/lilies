@@ -1,11 +1,13 @@
 # Strategy
 
-Current version: v0.1 (2026-10-22), paper trading only.
+Current version: v0.2 (2026-10-22 4:16pm ET), live from Fri 2026-10-23 once funded, with paper tests alongside.
 
 ## Objective
-Make money by beating the index. Success means returning more than SPY and QQQ over the same days, with the same money, after costs (set by Wuyue, 2026-10-22). If the strategy can't beat simply holding the index, the honest recommendation is to change it or hold the index.
+Make money by beating the index (set by Wuyue, 2026-10-22). "Beat the index" is defined (approved by Wuyue 2026-10-22 3:38pm ET): performance is judged on our cumulative return since 2026-10-22, after costs, against SPY, QQQ and a 70/30 SPY/QQQ blend over the same dates and cash flows. 2026-11-05 is a progress report; the keep-or-drop decision is Wuyue's year-end 2026 review (approved 2026-10-22 3:55pm ET), which replaces the 3-point trigger and the 3-month give-up rule. Medium-term strategies (weeks to months) are in scope; trades may change any day.
 
-Every Friday after the close there's a retro. It compares our return with SPY and QQQ for the week and since the start, lists which trades helped and hurt and why, and proposes any rule changes for Wuyue to approve or reject.
+Every Friday after the close there's a retro. It shows our return against the better of SPY and QQQ that week (context only, since a 70/30 mix always lands between the two in any single week) and the cumulative comparison above, lists which trades helped and hurt and why, and proposes any rule changes for Wuyue to approve or reject.
+
+The real-money shape (plan A, Wuyue 2026-10-22 4:16pm ET) is a core of about 60% split between QLD (2x Nasdaq-100) and SPYM, plus cash and about $100 bets such as dip buys and news trades, each with Wuyue's OK. Momentum stock picks stay paper-only; the X fast-news idea is a paper test. See `rules.md`.
 
 ## The daily loop
 1. **After the close, around 4:30pm.** Write a market brief: indexes, rates, dollar, oil, gold, sectors, breadth, catalysts and earnings, and risks. Every figure has a source. The format follows the @tychozzz daily-report framework (see below).
@@ -28,5 +30,9 @@ The after-close brief follows the @tychozzz post (Nico投资有道, 2026-05-24, 
 - **0DTE options** (存1500w🔪退休, 2026-10-09, +40% in a week on about $375). The risk is far too high, and the account has no options permission anyway.
 
 ## Changelog
+- 2026-10-22 3:38pm ET: Wuyue approved HOT 1,2,3,10,14, the tradable test and the benchmark definition; declined the history squash.
 - 2026-10-22: Objective set by Wuyue to beat SPY and QQQ, with a weekly Friday retro.
 - 2026-10-22: v0.1 drafted from the three Xiaohongshu posts and the X post Wuyue supplied. Wuyue approved paper trading through 2026-11-05.
+
+- 2026-10-22 4:16pm ET: Wuyue chose plan A for the Oct 23 live book: half the core in QLD, SPYM for the other half, real-money news trades allowed (v0.2).
+- 2026-10-22 3:55pm ET: Wuyue approved making Nov 5 a progress report and using his year-end review instead of the 3-point trigger and the 3-month give-up rule.
