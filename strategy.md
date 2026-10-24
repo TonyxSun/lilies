@@ -1,6 +1,6 @@
 # Strategy
 
-Current version: v0.2 (2026-10-22 4:16pm ET), live from Fri 2026-10-23 once funded, with paper tests alongside.
+Current version: v0.3 (2026-10-23 12:37am ET): live since Fri 2026-10-23, Trader trades on its own within rules.md, with paper tests alongside.
 
 ## Objective
 Make money by beating the index (set by Wuyue, 2026-10-22). "Beat the index" is defined (approved by Wuyue 2026-10-22 3:38pm ET): performance is judged on our cumulative return since 2026-10-22, after costs, against SPY, QQQ and a 70/30 SPY/QQQ blend over the same dates and cash flows. 2026-11-05 is a progress report; the keep-or-drop decision is Wuyue's year-end 2026 review (approved 2026-10-22 3:55pm ET), which replaces the 3-point trigger and the 3-month give-up rule. Medium-term strategies (weeks to months) are in scope; trades may change any day.
@@ -36,3 +36,5 @@ The after-close brief follows the @tychozzz post (Nico投资有道, 2026-05-24, 
 
 - 2026-10-22 4:16pm ET: Wuyue chose plan A for the Oct 23 live book: half the core in QLD, SPYM for the other half, real-money news trades allowed (v0.2).
 - 2026-10-22 3:55pm ET: Wuyue approved making Nov 5 a progress report and using his year-end review instead of the 3-point trigger and the 3-month give-up rule.
+- 2026-10-23 12:15-12:37am ET: Wuyue funded the account ($1,000, pending), gave Trader a standing authorization to trade within the rules and report after each fill (at most 4 daytime signals, score ≥ 6, bets ≤ ~40%), banned 2x/3x inverse funds, and told the bots to "recursively self-approve" research and rule improvements within the plan (v0.3). Step 3 of the daily loop now runs without a per-order OK.
+- 2026-10-23 10:10am ET: after a duplicate QLD fill from two parallel pre-open runs, Trader added order locks and a re-read-orders-before-every-place rule.

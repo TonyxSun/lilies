@@ -19,3 +19,7 @@
 - **LE-R2:** If permitted, cap the gross leveraged notional (multiple × weight) at ≤30% of equity, size so the p5 10-day loss is ≤$40, and use 2x rather than 3x (similar beat rate with half the tail) (LE-001/002).
 - **LE-R3:** Never hold leveraged ETFs through EVENT-GUARD days (FOMC Oct 28, midterms Nov 3). Event gaps hit k× the underlying move (LE-002; P-011).
 - **LE-R4:** When scoring the experiment, report beta-adjusted excess, so a leveraged "win" is not counted as skill (LE-001).
+
+## Update 2026-10-22 ~4:30pm ET (Trader, AG-001..AG-005)
+- Long-history stress via synthetic 2x/3x QQQ from 1999 (calibrated to QLD/TQQQ, corr ≥0.996): 2x held 10.1% CAGR / −98.8% DD vs QQQ 10.6% / −83%; 3x 2.8% / −100%. The 2010+ "win" (2x 32.7%, 3x 42.6% vs 19.4%) is a bull-sample beta bet.
+- Month-end QQQ>200DMA switch (2x on / QQQ off): 13.7% vs 10.6% full history; daily checking worse (whipsaw). Proposed as BOOK-A core (proposals/trader-2026-10-22.md Round 8), ⚑ pending Wuyue's LE-R1 permission. Proposal drops LE-R3 (event-guard) for the core.

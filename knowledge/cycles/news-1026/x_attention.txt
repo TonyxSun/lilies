@@ -1,0 +1,4 @@
+BCPC  last weekday 2026-10-22     38 vs weekday median      20 = 1.90x | today pace      86 = 4.29x -> SPIKE
+BAH   last weekday 2026-10-22     36 vs weekday median      36 = 1.00x | today pace     126 = 3.51x -> SPIKE
+LMT   last weekday 2026-10-22   2621 vs weekday median     612 = 4.28x | today pace     768 = 1.26x -> SPIKE
+TXN   last weekday 2026-10-22    903 vs weekday median    1099 = 0.82x | today pace     606 = 0.55x -> normal

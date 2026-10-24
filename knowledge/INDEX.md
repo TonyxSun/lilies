@@ -56,6 +56,7 @@ Promotion/demotion: each research round ends with a review — promote rules wit
 | benchmark-composition.md | 牛马 (worker B) | B cycle 16/22: concentration, SPCX, earnings-week null | 2026-10-22 |
 | forecast-tracking.md | 牛马 (worker B) | B cycle 15: Brier tool, LLM haircut | 2026-10-22 |
 | extended-hours.md | 牛马 (worker B) | B cycle 14: RH hours, stops not in ext hours, AH follow-through null | 2026-10-22 |
+| areas/ai-edge.md | Trader | done (AE-001..AE-007 own preregistered tests: batch 1 0/4, batch 2 0/188 at t>=3; ranking; literature = areas/ai-edge-sources.md) + backtests/2026-10-23-ai-edge/, backtests/2026-10-23-ai-edge-2/ | 2026-10-23 |
 
 ## Tools (file — owner — status — last updated)
 | tools/ledger.py, scorecard.py, rules.py, rh_closes_to_csv.py, lilies_core.py, ledger.csv (+ README-trader-tools.md, examples/, tests/test_trader_tools.py) | Trader | done (round 4): paper ledger seeded $1,000 2026-10-22, 14 tests pass | 2026-10-22 |

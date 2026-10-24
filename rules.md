@@ -1,9 +1,11 @@
 # Rules in force
 
-Last changed: 2026-10-22 4:16pm ET (Wuyue chose plan A: live from Fri Oct 23, half the core in QLD, real-money news trades allowed). Earlier: 3:55pm (year-end review), 3:38pm (HOT 1, 2, 3, 10, 14, tradable test, benchmark; history squash declined).
+Last changed: 2026-10-23 ~12:35am ET (Wuyue's standing trading authorization, "recursively self-approve", no 2x/3x inverse funds) and 10:10am ET (Trader's order-lock process rule). Earlier: 2026-10-22 4:16pm ET (Wuyue chose plan A: live from Fri Oct 23, half the core in QLD, real-money news trades allowed). Earlier: 3:55pm (year-end review), 3:38pm (HOT 1, 2, 3, 10, 14, tradable test, benchmark; history squash declined).
 
 ## Set by Wuyue
-- No order is placed without Wuyue's explicit OK. No autonomous trading limit has been granted. (2026-10-22)
+- ~~No order is placed without Wuyue's explicit OK. No autonomous trading limit has been granted. (2026-10-22)~~ Superseded 2026-10-23 12:35-12:36am ET: Trader may place trades on its own within these rules and reports after each fill. This covers the morning plan, daytime signals (at most 4 a day, any asset scoring 6 or more on TRADE-SCORING.md, including GLD, USO/BNO and TLT) and stop-loss sells. Bets (everything outside the index core) stay at or under about 40% of the account.
+- "Recursively self-approve" (Wuyue, 2026-10-23 12:37am ET): the bots may adopt their own research and rule improvements within the plan without asking him first. Trader owns trading decisions. The hard limits stay: cut-loss rules, bets ≤ about 40% of the account, no 2x/3x inverse funds, never force-push the repo.
+- Any doubt resolves toward the index or cash; geopolitical risk and loss-cutting are factored into every plan (Wuyue, 2026-10-23 12:15am ET).
 - Every number needs a source and a date. Never invent data. (2026-10-22)
 - ~~Paper trading first, through 2026-11-05.~~ Superseded 2026-10-22 4:16pm ET: live trading may start Fri 2026-10-23 with about $1,000 once Wuyue funds the account; the $1,000 paper account and the X fast-news paper test continue alongside. (2026-10-22)
 - Before any submit or confirm step, send Wuyue a screenshot and wait for his OK. (standing rule)
@@ -40,7 +42,7 @@ These are applied as written. A strong story never overrides them. Wuyue can cha
 
 - At most 10% of the account in any one stock, and at most 12 positions. The SPY/QQQ index core (VOO, QQQM) is exempt from the 10% cap.
   Why: the cap limits single-stock blow-ups; a broad index fund isn't a single-stock risk. (HOT 2; proposals round-2 #7)
-- Cash only. No margin, no shorting, no options. Leveraged and inverse ETFs bought with cash are allowed (QLD in the core per plan A; SH, PSQ, QID, SQQQ allowed as options per Wuyue 2026-10-22 3:55pm ET).
+- Cash only. No margin, no shorting, no options. Leveraged long ETFs bought with cash are allowed (QLD in the core per plan A). Inverse funds: 1x only (SH, PSQ). No 2x/3x inverse funds (QID, SQQQ, etc.) — fixed limit, Wuyue 2026-10-23 just after midnight ET (logged as 12:22pm in an earlier edit, likely 12:22am); supersedes the 2026-10-22 3:55pm allowance. TRADE-SCORING.md is the source of truth for limits.
 - **Stops (replace the old 2× ATR / -8% stop):** no stop on the index core (if one is ever mandatory, a -8% trailing stop). Single stocks exit at the next session if the close is below max(0.80 × highest close since entry, highest close − 5 × ATR14).
   Why: the 2× ATR stop cost -0.28 to -0.34% per 14-session window on the index and was the most harmful rule we tested; tight stops cut the momentum backtest by ~15 pts/yr. (HOT 3; SL-001, SL-005, SL-009, R-015, SL-007, SL-008, R-007)
 - **Loss breakers, measured on our own account** (total account value, close vs prior close; not QQQ or SPY): a -2% day means no new buys that day; -8% from the equity high means no new buys plus a review with Wuyue. No forced selling.
@@ -48,3 +50,5 @@ These are applied as written. A strong story never overrides them. Wuyue can cha
 - Never add to a losing position.
 - Wash sale: after selling at a loss, don't buy the same stock back for 30 days.
 - No new position within 2 trading days before earnings.
+- **Order safety (Trader, 2026-10-23 10:10am ET, after a duplicate QLD fill):** only one run may place a given day's plan (lock file); re-read the day's orders on the symbol right before every place, cancel or re-price; a unique reference id per order line. No same-day sells except stops; never sell a position bought with unsettled funds for a non-stop reason (good-faith violation).
+- **Cut-loss on the live book (Trader, 2026-10-23):** close-based, checked at 3:45pm ET from 2026-10-26. QLD exits on a close ≤ 15% below its average cost; single-stock bets use their own preset stop plus a time exit; account close ≤ $920 means sell the bets and QLD; a -2% account day means no new buys the next day.
